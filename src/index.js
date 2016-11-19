@@ -2,7 +2,7 @@
 
 import React, { Component, PropTypes } from 'react';
 import Scroll from './scroll-HOC';
-import { assign } from 'lodash.assign';
+import assign from 'lodash.assign';
 
 const progressStyle = {
     border: 'none',
@@ -10,6 +10,13 @@ const progressStyle = {
     appearance: 'none'
 };
 
+/**
+ * A Progress bar that is determined by a users scroll position on the page
+ *
+ * @class ScrollProgress
+ * @prop {Object} style inline style override for progress bar
+ * @return {Component}
+ */
 class ScrollProgress extends Component {
     constructor (props) {
         super(props);
@@ -23,6 +30,13 @@ class ScrollProgress extends Component {
         this.setProgressMax();
     }
 
+    /**
+     * Sets the 'max' value that the progress bar accepts
+     * Based on the body height - window height
+     *
+     * @for ScrollProgress
+     * @method setProgressMax
+     */
     setProgressMax () {
         this.setState({
             max: document.body.clientHeight - window.innerHeight

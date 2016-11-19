@@ -1,22 +1,32 @@
 {
   "name": "scroll-progress-react",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "scroll progress bar",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "babel ./src --out-dir ./dist"
   },
+  "files": [
+      "src",
+      "dist"
+  ],
   "keywords": [
     "scroll",
     "progress",
     "react",
-    "progress",
-    "bar"
+    "react-component",
+    "bar",
+    "page"
   ],
   "author": "Calum Peak",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/echoes221/scroll-progress-react"
+  },
   "license": "MIT",
   "peerDependencies": {
-    "react": "^15.0.0"
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
   },
   "dependencies": {
     "lodash.assign": "^4.2.0"
