@@ -26,7 +26,7 @@ class Scroll extends Component {
     }
 
     componentWillUnmount () {
-        window.removeEventListner('scroll', this.handleScroll);
+        window.removeEventListener('scroll', this.handleScroll);
     }
 
     /**
