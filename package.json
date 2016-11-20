@@ -1,14 +1,16 @@
 {
   "name": "scroll-progress-react",
   "version": "0.1.0",
-  "description": "scroll progress bar",
+  "description": "page scroll progress bar",
   "main": "./dist/index.js",
   "scripts": {
-    "prepublish": "babel ./src --out-dir ./dist"
+    "clean": "rm -rf dist",
+    "build": "babel ./src --out-dir ./dist",
+    "prepublish": "npm run clean && npm run build"
   },
   "files": [
-      "src",
-      "dist"
+    "src",
+    "dist"
   ],
   "keywords": [
     "scroll",
@@ -22,6 +24,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/echoes221/scroll-progress-react"
+  },
+  "bugs": {
+    "url": "https://github.com/echoes221/scroll-progress-react/issues"
   },
   "license": "MIT",
   "peerDependencies": {
