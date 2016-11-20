@@ -51,7 +51,7 @@ class ScrollProgress extends Component {
             <Scroll>
                 {position =>
                     <progress
-                        className = 'scroll-progress-react'
+                        className = {className ||'scroll-progress-react'}
                         style = {assign({}, progressStyle, style)}
                         value = {position}
                         max = {max}
@@ -63,7 +63,8 @@ class ScrollProgress extends Component {
 }
 
 ScrollProgress.propTypes = {
-    style: PropTypes.object
+    style: PropTypes.object,
+    className: PropTypes.string
 };
 
 export default ScrollProgress;
