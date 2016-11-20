@@ -1,6 +1,6 @@
 {
   "name": "scroll-progress-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "page scroll progress bar",
   "main": "./dist/index.js",
   "scripts": {
