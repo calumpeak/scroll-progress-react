@@ -22,7 +22,9 @@ export default Demo;
 ```
 ###Props
 
-  - style: {Object} Override inline styles
-  - className: Default `.scroll-progress-react`
+prop | Type | Default
+-----|------|--------
+style| Object | 
+className | String | scroll-progress-react
   
 Due to the nature of HTML5 progress bars, prefer to use CSS files select by the above class name. 
