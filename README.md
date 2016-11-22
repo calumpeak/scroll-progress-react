@@ -1,4 +1,5 @@
 # scroll-progress-react
+[![Build Status](https://img.shields.io/travis/npm/npm/latest.svg)](https://travis-ci.org/npm/npm)
 
 React component that tracks a users progress through a page as they scroll.
 
