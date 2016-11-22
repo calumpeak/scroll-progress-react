@@ -10,3 +10,5 @@ deploy:
     tags: true
     branch: master
     repo: echoes221/scroll-progress-react
+notifications:
+  email: false
