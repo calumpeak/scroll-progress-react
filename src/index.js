@@ -39,7 +39,7 @@ class ScrollProgress extends Component {
      */
     setProgressMax () {
         this.setState({
-            max: document.body.clientHeight - window.innerHeight
+            max: parseInt(window.getComputedStyle(document.body).height, 10) - window.innerHeight
         });
     }
 

@@ -37,7 +37,7 @@ class Scroll extends Component {
      */
     handleScroll (event) {
         this.setState({
-            position: event.srcElement.body.scrollTop
+            position: document.body.scrollTop
         });
     }
 
